@@ -1,0 +1,102 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $regular
+	overflow-x: hidden
+	opacity: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.container-wrap
+	width: 100%
+	max-width: 1240px
+	margin: 0 auto
+	padding: 20px 10px
+
+.header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	flex-wrap: wrap
+	margin-bottom: 50px
+
+.carousel
+	width: 65%
+	margin: 0 auto
+	.single-item
+
+
+.accordion-inner
+	.accordion
+		background-color: #00cba0
+		color: #FFF
+		cursor: pointer
+		padding: 18px
+		width: 100%
+		border: 0
+		text-align: left
+		outline: none
+		transition: .4s
+		border-radius: 10px
+		margin-bottom: 10px
+		font-size: 18px
+	.panel
+		padding: 0 18px
+		background-color: #fff
+		max-height: 0
+		overflow: hidden
+		transition: max-height .2s ease-out
+
+.video-wrap
+	.video-inner
+		display: flex
+		justify-content: space-between
+		.video__item
+			p
+				background-color: #00cba0
+				padding: 10px 10px
+				border-radius: 10px
+				color: #fff
+				font-size: 18px
+.footer
+	background: #98b6ce
+	text-align: center
+
+
+@import "media" // Всегда в конце
+
